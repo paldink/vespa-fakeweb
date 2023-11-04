@@ -20,43 +20,233 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar">
-        <a href="#"><img src="vespa logo.png" class="nav-logo"></a>
+    <header>
+        <nav class="navbar">
+            <a onclick="handleClick('home')"><img src="assets/images/vespa logo.png" class="nav-logo"></a>
 
-        <div class="navbar-nav">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </div>
-
-        <div class="navbar-extra">
-            <a href="#">Test Drive</a>
-        </div>
-    </nav>
-
-    <div class="content">
-        <div class="section1">
-            <h2>VESPA SPRINT</h2>
-            <h1>S 150 ABS</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, sequi. Aliquam neque ad vel, aliquid
-                reprehenderit fugiat ab voluptatum molestias nam magni voluptates id. Asperiores ex obcaecati fugit
-                natus
-                quis?
-            </p>
-            <button>Learn More</button>
-            <h3>Choose Your Color</h3>
-            <div class="color-select">
-                <div id="grey"></div>
-                <div id="white"></div>
-                <div id="orange"></div>
-                <div id="green"></div>
+            <div class="navbar-nav">
+                <a onclick="handleClick('home')">Home</a>
+                <a onclick="handleClick('about')">About</a>
+                <a onclick="handleClick('services')">Services</a>
+                <a onclick="handleClick('contact')">Contact</a>
             </div>
+
+            <div class="navbar-extra">
+                <a href="#">Test Drive</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <div id="home">
+                <article class="section1" class="home">
+                    <h1>S 150 ABS</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, sequi. Aliquam neque ad vel,
+                        aliquid
+                        reprehenderit fugiat ab voluptatum molestias nam magni voluptates id. Asperiores ex obcaecati
+                        fugit
+                        natus
+                        quis?
+                    </p>
+                    <button class="test-drv">Learn More</button>
+                    <h3>Choose Your Color</h3>
+                    <div class="color-select">
+                        <div id="grey"></div>
+                        <div id="white"></div>
+                        <div id="orange"></div>
+                        <div id="green"></div>
+                    </div>
+                </article>
+
+
+                <article id="vespa">
+                    <div id="bike" class="section2"></div>
+                </article>
+            </div>
+
+            <article id="about">
+                <section id="tentang-kami">
+                    <h2>TEMUKAN SENSASI BERSAMA SPRINT
+                    </h2>
+                    <p>Berani dan ekstrovert adalah penjiwaan karakter Vespa yang telah melekat selama lebih dari 60
+                        tahun
+                        lamanya.Vespa Sprint memiliki karakter yang bernyali, cepat, sangat lincah dan tak gentar,
+                        layaknya
+                        mentalitas mereka yang mengendarainya. Terlahir dengan rasa percaya diri, penuh determinasi,
+                        bernyali, dan diperkaya dengan fitur teknis terdepan, dan didesain untuk mendapatkan tingkat
+                        kestabilan dan handling yang tinggi. Vespa Sprint lahir untuk mendefinisikan perjalanan harian
+                        menjadi kegiatan yang menyenangkan.
+                    </p>
+                </section>
+                <section id="keunggulan">
+                    <h2>Keunggulan Kami</h2>
+                    <div class="container">
+                        <div class="card">
+                            <h3>Produk Berkualitas</h3>
+                            <p>Kami hanya menjual produk Vespa asli yang terkenal akan kualitas dan desainnya yang unik.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Pelayanan Pelanggan</h3>
+                            <p>Kami mengutamakan kepuasan pelanggan, siap memberikan bantuan dan informasi yang Anda
+                                butuhkan</p>
+                        </div>
+                        <div class="card">
+                            <h3>Komitmen Lingkungan</h3>
+                            <p>Kami mendukung inisiatif lingkungan dan berkomitmen untuk menjaga bumi dengan produk yang
+                                ramah lingkungan.</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="proud">
+                    <h2>We Proud</h2>
+                    <p>Kami sangat bangga menjadi bagian dari komunitas Vespa yang bersemangat dan berdedikasi. Kami
+                        berharap dapat membantu Anda menemukan Vespa impian Anda dan menginspirasi perjalanan Anda
+                        dengan
+                        kendaraan ikonik ini. Terima kasih atas kunjungan Anda ke situs web kami, dan kami siap untuk
+                        melayani Anda.</p>
+                </section>
+            </article>
+
+            <article id="services">
+                <h2>Spesifikasi</h2>
+                <table class="specs">
+                    <tbody>
+                        <tr>
+                            <th>Mesin</th>
+                            <td> 4 langkah, silinder tunggal dengan 3 katup</td>
+                        </tr>
+                        <tr>
+                            <th>Sistem Pembakaran</th>
+                            <td>Injeksi Elektronik</td>
+                        </tr>
+                        <tr>
+                            <th>Kapasitas</th>
+                            <td>154,8 cc</td>
+                        </tr>
+                        <tr>
+                            <th>Daya Maks.</th>
+                            <td>8,7 kW @ 7.500 rpm</td>
+                        </tr>
+                        <tr>
+                            <th>Torsi Maks.</th>
+                            <td>12 Nm @ 5.000 rpm</td>
+                        </tr>
+                        <tr>
+                            <th>Sistem Pendingin</th>
+                            <td>Sirkulasi Udara Tekan</td>
+                        </tr>
+                        <tr>
+                            <th>Transmisi</th>
+                            <td>CVT (Continuous Variable Transmission) Otomatis</td>
+                        </tr>
+                        <tr>
+                            <th>Suspensi Depan</th>
+                            <td>Lengan tunggal dengan pegas helikal dan peredam kejut hidrolik tunggal dengan aksi ganda
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Suspensi Depan</th>
+                            <td>Lengan tunggal dengan pegas helikal dan peredam kejut hidrolik tunggal dengan aksi ganda
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Suspensi Belakang</th>
+                            <td>Peredam kejut hidrolik tunggal dengan 4 tingkat setelan kekerasan</td>
+                        </tr>
+                        <tr>
+                            <th>Rem Depan</th>
+                            <td>Cakram 220 mm</td>
+                        </tr>
+                        <tr>
+                            <th>Rem Belakang</th>
+                            <td>Tromol 140 mm</td>
+                        </tr>
+                        <tr>
+                            <th>Ban Depan</th>
+                            <td>Tubeless 110/70-12"</td>
+                        </tr>
+                        <tr>
+                            <th>Ban Belakang</th>
+                            <td>Tubeless 110/70-12"</td>
+                        </tr>
+                        <tr>
+                            <th>Panjang / Lebar</th>
+                            <td>1.863 mm / 695 mm</td>
+                        </tr>
+                        <tr>
+                            <th>Jarak Sumbu Roda</th>
+                            <td>1.334 mm</td>
+                        </tr>
+                        <tr>
+                            <th>Ketinggian Jok</th>
+                            <td>790 mm</td>
+                        </tr>
+                        <tr>
+                            <th>Kapasitas Tangki</th>
+                            <td>7 (± 0,5) liter</td>
+                        </tr>
+                        <tr>
+                            <th>Emisi</th>
+                            <td>Euro 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="contact">
+                <header>
+                    <h2>Contact Us</h2>
+                    <p>Feel free to contact us any time. We will get back to you as soon as we can</p>
+                </header>
+                <div class="container">
+                    <main>
+                        <div class="content">
+                            <h3>Contact Us</h3>
+                            <form action="#" method="post">
+                                <input type="text" name="name" placeholder="Enter Your Name">
+                                <input type="email" name="email" placeholder="Enter Your Email">
+                                <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                                <button type="button" class="btn">Send</button>
+                            </form>
+                        </div>
+                    </main>
+                </div>
+            </article>
         </div>
 
-        <div id="bike" class="section2"></div>
-    </div>
+        <aside>
+            <div class="wrapper">
+                <div class="biodata">
+                    <h3>Biodata</h3>
+                    <img src="assets/images/biodata.png" class="pas-foto">
+                    <p class="role">Pelajar</p>
+                    <table class="bio-info">
+                        <tbody>
+                            <tr>
+                                <th>Nama:</th>
+                                <td>Muhammad Naufal Ferdiansyah</td>
+                            </tr>
+                            <tr>
+                                <th>Alamat:</th>
+                                <td>Gg. Ralin II, Jakarta Timur</td>
+                            </tr>
+                            <tr>
+                                <th>No. Telepon:</th>
+                                <td>085156749081</td>
+                            </tr>
+                            <tr>
+                                <th>Email:</th>
+                                <td>muhammadnaufal130607@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </aside>
+    </main>
 
     <!-- icon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
