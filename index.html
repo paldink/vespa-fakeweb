@@ -8,6 +8,9 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- icon -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +35,8 @@
             </div>
 
             <div class="navbar-extra">
-                <a href="#">Test Drive</a>
+                <a href="#" class="test-drv">Test Drive</a>
+                <i class="ph ph-list" id="menu-icon"></i>
             </div>
         </nav>
     </header>
@@ -50,7 +54,9 @@
                         natus
                         quis?
                     </p>
-                    <button class="test-drv">Learn More</button>
+                    <div class="button">
+                        <button class="learn">Learn More</button>
+                    </div>
                     <h3>Choose Your Color</h3>
                     <div class="color-select">
                         <div id="grey"></div>
@@ -220,31 +226,34 @@
         <aside>
             <div class="wrapper">
                 <div class="biodata">
-                    <h3>Biodata</h3>
-                    <img src="assets/images/biodata.png" class="pas-foto">
-                    <p class="role">Pelajar</p>
-                    <table class="bio-info">
-                        <tbody>
-                            <tr>
-                                <th>Nama: </th>
-                                <td>Muhammad Naufal Ferdiansyah</td>
-                            </tr>
-                            <tr>
-                                <th>Alamat: </th>
-                                <td>Gg. Ralin II, Jakarta Timur</td>
-                            </tr>
-                            <tr>
-                                <th>No. Telepon: </th>
-                                <td>085156749081</td>
-                            </tr>
-                            <tr>
-                                <th>Email: </th>
-                                <td>muhammadnaufal130607@gmail.com</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="main-bio">
+                        <h3>Biodata</h3>
+                        <img src="assets/images/biodata.png" class="pas-foto">
+                        <div class="role">
+                            <p>Pelajar</p>
+                        </div>
+                        <table class="bio-info">
+                            <tbody>
+                                <tr>
+                                    <th>Nama: </th>
+                                    <td>Muhammad Naufal Ferdiansyah</td>
+                                </tr>
+                                <tr>
+                                    <th>Alamat: </th>
+                                    <td>Gg. Ralin II, Jakarta Timur</td>
+                                </tr>
+                                <tr>
+                                    <th>No. Telepon: </th>
+                                    <td>085156749081</td>
+                                </tr>
+                                <tr>
+                                    <th>Email: </th>
+                                    <td>muhammadnaufal130607@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
         </aside>
     </main>
 
