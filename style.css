@@ -6,6 +6,7 @@
     outline: none;
     border: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,12 +17,14 @@ body {
 
 .nav-logo {
     width: 75px;
+    cursor: pointer;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #F4CE14;
     padding: .3rem 5%;
     position: fixed;
     top: 0;
@@ -32,18 +35,19 @@ body {
 .navbar .navbar-nav a {
     color: #333;
     display: inline-block;
+    cursor: pointer;
     margin: 0 1rem;
 }
 
 .navbar .navbar-nav a:hover {
-    color: tomato;
+    color: #45474B;
 }
 
 .navbar .navbar-nav a::after {
     content: '';
     display: block;
     padding-bottom: .5rem;
-    border-bottom: 0.1rem solid tomato;
+    border-bottom: 0.1rem solid #45474B;
     transform: scaleX(0);
     transition: 0.3s linear;
 }
@@ -77,38 +81,39 @@ body {
     width: 50%;
 }
 
-.content {
+#home {
     margin-top: 10%;
     padding: .3rem 5%;
     padding-top: 65px;
+    padding-bottom: 65px;
     display: flex;
 }
 
-.content h2 {
+#home h2 {
     color: red;
     font-size: 24px;
 }
 
-.content h1 {
+#home h1 {
     font-size: 70px;
     color: #333;
     margin-top: -20px;
 }
 
-.content p {
+#home p {
     max-width: 300px;
     font-weight: 500;
     font-size: 12px;
     color: #555;
 }
 
-.content h3 {
+#home h3 {
     margin-top: 30px;
     font-weight: 600;
     font-size: 20px;
 }
 
-button {
+.test-drv {
     background-color: #555;
     color: #fff;
     width: 150px;
@@ -121,8 +126,8 @@ button {
     border: 0;
 }
 
-button:hover {
-    background-color: #222;
+.test-drv:hover {
+    background-color: #000;
     transform: scaleX(-10px);
 }
 
@@ -141,7 +146,7 @@ button:hover {
 }
 
 .color-select #grey {
-    background: rgb(60, 60, 60);;
+    background: rgb(60, 60, 60);
     transition: .3s ease-in;
 }
 
@@ -176,13 +181,249 @@ button:hover {
     transform: translateY(-10px);
 }
 
-.section2 {
+#vespa {
     width: 100%;
     height: 70vh;
-    background-image: url("vespa-img/blackvespa.png");
+    background-image: url("assets/images/blackvespa.png");
     background-size: cover;
     background-position: center;
     transition: .3s ease;
+}
+
+#tentang-kami {
+    background-color: #45474B;
+    color: #fff;
+}
+
+#tentang-kami h2 {
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+#tentang-kami p {
+    max-width: 850px;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 2.5rem;
+}
+
+#keunggulan {
+    padding: 2.5rem;
+    margin: 30px;
+}
+
+#keunggulan h2 {
+    font-size: 28px;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.card p {
+    max-width: 250px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#proud {
+    background-color: #F4CE14;
+    margin-bottom: 2rem;
+}
+
+#proud h2 {
+    font-size: 28px;
+    text-align: right;
+    padding-right: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+#proud p {
+    text-align: right;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 2.5rem;
+}
+
+#services h2 {
+    font-size: 28px;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.specs {
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    
+}
+
+.specs th {
+    border-right: 1px solid #000;
+}
+
+.specs td, .specs th {
+    padding: 1rem;
+    vertical-align: top;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: left;
+}
+
+#contact header {
+    padding: 2rem;
+}
+
+header h2 {
+   font-size: 28px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.content {
+    flex-basis: 50%;
+    padding: 3em;
+    margin-bottom: 2.5rem;
+    background-color: #F4CE14;
+    box-shadow: 2px 9px 49px -17px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.content h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.btn, input, button {
+    border-radius: 35px;
+} 
+
+form {
+    margin: 30px 0;
+}
+
+input, textarea {
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: #000;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background-color: #fff;
+    transition: .3s ease;
+}
+ .btn {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background-color: #555;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    padding: 14px 15px;
+ }
+
+ .btn:hover {
+    background-color: #000;
+    transform: scaleX(-10px);
+}
+
+aside .wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 2.5rem;
+    width: 550px;
+    height: 500px;
+    background-color: #F4CE14;
+    border-radius: 20px;
+    transition: height .2s ease;
+}
+
+.biodata h3 {
+    width: fit-content;
+    position: relative;
+    left: 185px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #000;
+}
+
+.biodata img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+ .biodata p {
+    width: fit-content;
+    position: relative;
+    left: 185px;
+    margin: 20px;
+    padding: 0 5px;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.bold {
+    font-weight: 600;
+    text-align: left;
+}
+
+.biodata li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.bio-info {
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.bio-info td, .bio-info th {
+    padding: 5px 10px;
+    vertical-align: top;
+    text-align: left;
 }
 
 /* content end */
