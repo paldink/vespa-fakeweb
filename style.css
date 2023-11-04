@@ -184,7 +184,7 @@ body {
 #vespa {
     width: 100%;
     height: 70vh;
-    background-image: url("assets/images/blackvespa.png");
+    background-image: url("vespa-img/blackvespa.png");
     background-size: cover;
     background-position: center;
     transition: .3s ease;
