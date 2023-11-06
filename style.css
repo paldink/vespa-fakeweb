@@ -201,15 +201,17 @@ body {
 }
 
 #tentang-kami h2 {
-    padding-top: 2.5rem;
-    padding-left: 2.5rem;
+    max-width: fit-content;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 #tentang-kami p {
     max-width: 850px;
     font-weight: 500;
     font-size: 15px;
-    padding: 2.5rem;
+    padding: 1.5rem;
 }
 
 #keunggulan {
