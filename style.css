@@ -434,6 +434,12 @@ aside .wrapper {
 
 /* media query */
 
+/* pc and laptop*/
+@media screen and (min-width) {
+    #vespa {
+        
+    }
+}
 
 /* Tablet */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -466,6 +472,7 @@ aside .wrapper {
 
     #vespa {
         width: 100%;
+        height: 480px;
         margin: 0 auto;
     }
 
@@ -549,7 +556,7 @@ aside .wrapper {
         }
 
         #vespa {
-            width: 90%;
+            width: 88%;
             height: 360px;
             margin: 0 auto;
         }
