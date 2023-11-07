@@ -23,21 +23,6 @@ greenBtn.onclick = function() {
     bike.style.backgroundImage = "url(assets/images/greenvespa.png)";
 }
 
-// function scroll
-function handleClick(param) {
-    if (param === "home") {
-       return location.href = "#home"
-    } else if (param === "about") {
-       return location.href = "#about"
-    } else if (param === "services") {
-       return location.href = "#services"
-    } else if (param === "contact") {
-       return location.href = "#contact"
-    } else {
-
-    }
-}
-
 // function list logo
 menu.onclick = () => {
     menu.classList.toggle('ph-x');
