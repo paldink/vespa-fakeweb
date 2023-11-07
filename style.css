@@ -370,67 +370,6 @@ input, textarea {
     transform: scaleX(-10px);
 }
 
-aside .wrapper {
-    margin: 45px auto;
-    padding: 2.5rem;
-    width: fit-content;
-    height: fit-content;
-    background-color: #F4CE14;
-    border-radius: 20px;
-    transition: height .2s ease;
-}
-
-.biodata h3 {
-    width: 100%;
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.biodata img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 80px;
-    display: block;
-    margin: 0 auto;
-}
-
- .role {
-    width: fit-content;
-    margin: 10px auto;
-    text-align: center;
-    border: 2px solid #000;
-    border-radius: 10px;
-}
-
-.role p {
-    padding: 0 5px;
-    font-size: 15px;
-}
-
-.bold {
-    font-weight: 600;
-    text-align: left;
-}
-
-.biodata li {
-    list-style-type: none;
-    text-align: left;
-}
-
-.bio-info {
-    max-width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto;
-}
-
-.bio-info td, .bio-info th {
-    padding: 5px 10px;
-    text-align: left;
-}
-
-
 footer {
     position: relative;
     width: 100%;
@@ -630,19 +569,6 @@ footer p {
             margin: 0 auto;
         }
 
-        aside .wrapper {
-            width: fit-content;
-        }
-        
-        tr {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .bio-info td, .bio-info th {
-            font-size: small;
-        }
-
     }
 
     @media screen and (max-width: 528px) {
@@ -653,33 +579,11 @@ footer p {
 
         .container {
         width: 80%;
-        margin: 0 auto;
     }
 
     #keunggulan h2 {
         padding: 0;
     }
-
-    aside .wrapper {
-            width: 80%;
-            padding: 0;
-        }
-        
-        
-    .main-bio h3 {
-            padding-top: 25px;
-        }
-
-    tr {
-            display: flex;
-            flex-direction: column;
-        }
-
-    .bio-info td, .bio-info th {
-            font-size: small;
-        }
-
-}
 
     @media screen and (max-width: 388px) {
     #home h1 {
@@ -691,8 +595,5 @@ footer p {
         height: 200px;
     }
 
-    aside .wrapper {
-        width: fit-content;
     }
-
 }
